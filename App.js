@@ -1,4 +1,4 @@
-import 'react-native-gesture-handler'
+import 'react-native-gesture-handler';
 
 import React from "react";
 
@@ -7,7 +7,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import BusSchedules from "./src/pages/BusSchedules";
 import Notices from "./src/pages/Notices"
-// import Map from "./src/pages/Map";
+import Map from "./src/pages/Map";
+import Auth from './src/pages/Login'
 
 const Stack = createNativeStackNavigator()
 
@@ -29,14 +30,14 @@ export default function App()
 
                 />
 
-                {/* <Stack.Screen
+                <Stack.Screen
 
                     name="Map"
                     component={Map}
                     options={{ headerShown: false }}
                     navigationKey="1"
 
-                /> */}
+                />
 
 
                 <Stack.Screen
@@ -45,6 +46,15 @@ export default function App()
                     component={Notices}
                     options={{ headerShown: false }}
                     navigationKey="2"
+
+                />
+
+                <Stack.Screen
+
+                name="Auth"
+                component={Auth}
+                options={{ headerShown: false }}
+                navigationKey="3"
 
                 />
                 

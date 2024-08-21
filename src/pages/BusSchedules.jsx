@@ -4,6 +4,8 @@ import { ScrollView, Text, View, StyleSheet } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
 
+import { useState } from "react";
+
 import baseStyles from "../utils/Styles";
 import Colors from "../utils/Colors";
 
@@ -17,6 +19,9 @@ export default function BusSchedules()
 {
 
     const navigation = useNavigation();
+
+    const [semana, SetSemana] = useState(false)
+    const [FimSemana, SetFimSemana] = useState(false)
 
     return (
 
@@ -32,13 +37,13 @@ export default function BusSchedules()
 
                 <View style={styles.btnContainer}>
 
-                    <BtnSecondary title='Segunda a Sexta' />
+                    <BtnSecondary onPress={() => {SetSemana(!semana)}} title='Segunda a Sexta' />
 
-                    <Schedule />
+                    <Schedule display={semana} />
 
-                    <BtnSecondary title='Finais de Semana' />
+                    <BtnSecondary onPress={() => {SetFimSemana(!FimSemana)}} title='Finais de Semana' />
 
-                    <Schedule />
+                    <Schedule display={FimSemana} />
 
                 </View>
 

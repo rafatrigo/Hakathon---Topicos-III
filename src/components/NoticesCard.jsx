@@ -20,7 +20,7 @@ export default function NoticesCard()
             </View>
 
             <View style={styles.footer}>
-                <Text style={styles.footerName}>Fernando Souza</Text>
+                {/* <Text style={styles.footerName}>Fernando Souza</Text> */}
                 
                 <View style={styles.footerTime}>
 

@@ -11,13 +11,13 @@ const baseStyles = StyleSheet.create({
   },
   text: {
     fontSize: 24,
-    color: Colors.BLACK1,
+    color: Colors.WHITE1,
   },
   header: {
     paddingTop: 40,
     height: 80,
     width: '100%',
-    backgroundColor: Colors.WHITE1,
+    backgroundColor: Colors.SECONDARY1,
     alignItems: 'center',
   }
 });

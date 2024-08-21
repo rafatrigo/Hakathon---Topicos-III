@@ -8,8 +8,13 @@ import NoticesCard from "../components/NoticesCard";
 
 import Footer from "../components/Footer";
 
+import BtnCreateNotice from "../components/BtnCreateNotice";
+
+// import { useNavigation } from "expo-router";
+
 export default function BusSchedules()
 {
+    // const navigation = useNavigation();
 
     return (
 
@@ -21,15 +26,27 @@ export default function BusSchedules()
 
                     <Text style={baseStyles.text}>Avisos</Text>
 
-                    <View style={styles.notices}>
 
-                        <NoticesCard />
-                        
-                    </View>
+                </View>
 
+                <View style={styles.notices}>
+
+                    <NoticesCard />
+
+                    <NoticesCard />
+
+                    <NoticesCard />
+
+                    <NoticesCard />
+                    
+                    <NoticesCard />
+
+                    
                 </View>
                 
             </ScrollView>
+
+            <BtnCreateNotice />
 
             <Footer/>            
 
