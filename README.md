@@ -1,3 +1,6 @@
+# Slides
+https://www.canva.com/design/DAGOeoMraO0/nOWXyOgnt-i5Es-3OcNZ6w/edit
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
